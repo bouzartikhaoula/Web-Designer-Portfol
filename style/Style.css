@@ -1,0 +1,99 @@
+
+:root {
+    --mainColor: #887f91;
+    --white: #ffffff;
+    --colorTwo:#dac0cb60;
+    --colorOne:#623f81;
+    
+
+
+  }
+  
+.main{
+  background-color: var(--colorTwo) ;
+  height: 95vh;
+}
+.btn{
+    background-color: var(--colorOne) !important;
+    color :var(--white) !important;
+    border: 1px solid var(--colorOne) !important;
+    }
+.btn:hover{
+background-color: var(--white) !important;
+color :var(--colorOne) !important;
+}
+
+.cards{
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  align-items: center;
+}
+
+@media(min-width: 992px) {
+.cards{
+  margin-top: -50px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}}
+
+.cards:hover{
+  background-color: var(--colorOne);
+  color: #ffffff;
+  transition: 1s;
+
+}
+/* about section */
+.about{
+  margin-top: 100px;
+  height: 100vh;
+}
+@media(max-width: 992px) {
+  .about{
+    margin-top: 105vh;
+    margin-bottom: 60vh;
+    padding: 0;
+    height: 100vh;
+  }}
+
+  /* identity section */
+  .identity{
+   
+    background-color: var(--colorTwo);
+  }
+  @media(min-width: 992px) {
+    .identity{
+      height: fit-content;
+      background-color: var(--colorTwo);
+    }
+  
+  }
+
+  .services{
+    height: 100vh;
+  }
+
+  .cardss:hover{
+background-color: var(--colorOne) !important;
+color: var(--white);
+transition: 1s;
+  }
+  @media(max-width: 900px) {
+  .contact{
+    margin-top: 350px;
+    height: 100vh;
+  }
+  .contact h1{
+    padding-top: 20px;
+    
+  }
+}
+.footer{
+  background-color: var(--colorOne);
+  height: 100vh;
+  color: var(--white);
+}
+.footer div h2:hover {
+  display: block !important;
+  background-color: var(--white);
+  color: var(--colorOne);
+  
+}
