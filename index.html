@@ -31,20 +31,20 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto">
               <li class="nav-item me-4">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#" onclick="scrollToSHome()">Home</a>
               </li>
               <li class="nav-item me-4">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="#" onclick="scrollToAbout()"
                   >About</a
                 >
               </li>
               <li class="nav-item me-4">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="#" onclick="scrollToServices()"
                   >Services</a
                 >
               </li>
               <li class="nav-item me-4">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="#" onclick="scrollToContact()"
                   >Contact Us</a
                 >
               </li>
@@ -65,7 +65,7 @@
       </nav>
     </section>
 
-    <section class="main">
+    <section class="main" id="home">
       <div class="container mt-2">
         <div class="row">
           <div class="col-lg-5 pe-2 pt-5">
@@ -131,24 +131,25 @@
       </div>
     </section>
 
-    <section class="about container">
+    <section class="about container" id="about">
       <div class="row">
         <div class="col-lg-6">
           <img
             src="style/img/image (1).png"
             style="width: 100%; height: 100%"
             alt=""
+            data-aos="fade-right"
           />
         </div>
-        <div class="col-lg-6 pt-5 " data-aos="fade-left">
-          <h2 class="mt-5 pt-5" > About us</h2>
-          <p class="text-black-50">
+        <div class="col-lg-6 pt-5 " >
+          <h2 class="mt-5 pt-5" data-aos="fade-down-right" > About us</h2>
+          <p class="text-black-50" data-aos="fade-down-right">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
             excepturi, in reprehenderit non, quod saepe commodi minima, iste
             aperiam dolorum ab asperiores. Voluptatibus perspiciatis, est vero
             non quasi ratione fuga.
           </p>
-          <button class="btn">Read More</button>
+          <button class="btn" data-aos="fade-down-right">Read More</button>
         </div>
       </div>
     </section>
@@ -159,40 +160,40 @@
         <div class="col-lg-6">
           <img class="mt-4 mb-4" src="style/img/image5.jpg" alt="" style="width: 80%;">
         </div>
-        <div class="col-lg-6">
-          <h1>Visual identity for your project</h1> 
-          <p>
+        <div class="col-lg-6" >
+          <h1 data-aos="fade-down" >Visual identity for your project</h1> 
+          <p data-aos="fade-down">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ea
             recusandae adipisci ipsa vitae vel inventore praesentium animi
             officia nostrum vero ad magnam dolorum blanditiis cum tempore quae
             quis ut!
           </p>
-          <button class="btn">Read More</button>
+          <button class="btn" data-aos="fade-down">Read More</button>
         </div>
       </div>
     </section>
-    <section class="services container text-center  pt-3 ">
+    <section class="services container text-center  pt-3 " id="services">
     <h1 class="mt-5">Our Services</h1>
     <div class=" container row  gap-3  mt-5 mb-5pt-5">
-      <div class="cardss col-lg shadow bg-white p-4">
+      <div class="cardss col-lg shadow bg-white p-4" data-aos="zoom-in">
         <h1><i class="fa-regular fa-image"></i></h1>
         <h3>Edit Photo</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ullam laudantium officia .</p>
       </div>
       
-      <div class="cardss col-lg shadow   bg-white p-4"> <h1><i class="fa-solid fa-object-group"></i></h1>
+      <div class="cardss col-lg shadow   bg-white p-4" data-aos="zoom-in"> <h1><i class="fa-solid fa-object-group"></i></h1>
         <h3>logo & media design</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ullam laudantium officia .</p>
       </div>
-      <div class="cardss col-lg shadow   bg-white p-4"> <h1><i class="fa-brands fa-figma"></i></h1>
+      <div class="cardss col-lg shadow   bg-white p-4" data-aos="zoom-in"> <h1><i class="fa-brands fa-figma"></i></h1>
         <h3>wed ui & ux</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ullam laudantium officia .</p>
       </div>
     </div>
-    <button class="btn p-3 mt-5">View More </button>
+    <button class="btn p-3 mt-5" data-aos="zoom-in-down">View More </button>
 
     </section>
-    <section class=" contact container  text-center">
+    <section class=" contact container  text-center" id="contact">
       <h1 class="m-5">Contact Us  </h1>
       <div class="row ">
         <div class="col-lg">
